@@ -25,7 +25,8 @@ mvn test
   `SyntheticContainerRecording` on a JVM that is not containerized (e.g. on macOS) - see its
   Javadoc.
 - `NativeImageSanityIT` starts a native binary and checks that it answers an MCP `tools/list`
-  request. It is skipped unless `native.image.path` points to a binary:
+  request. `NativeImageRecordingIT` has the binary load `wldf.jfr` and run the rules, and with
+  `JEV_KEY` set also calls Jev. Both are skipped unless `native.image.path` points to a binary:
 
   ```
   mvn verify -Dnative -Dnative.image.path=target/jmc-jev-mcp-0.1.0-SNAPSHOT-runner
