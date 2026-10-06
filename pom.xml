@@ -6,7 +6,7 @@
 
 	<groupId>se.hirt.jmc</groupId>
 	<artifactId>jmc-jev-mcp</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>JMC Jev MCP Server</name>
 	<description>An MCP server that judges JDK Flight Recorder recordings: classifies the dominant
